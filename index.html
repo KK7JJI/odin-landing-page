@@ -11,7 +11,7 @@
 
     <div class="header">
         <img class="header-logo" src="./images/logo.png" alt="Image of the company logo.">
-        <ul>
+        <ul class="header-nav-list nav-list">
             <li><a href="./index.html">header link one</a></li>
             <li><a href="./index.html">header link two</a></li>
             <li><a href="./index.html">header link three</a></li>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="content">
-        <div class="title-section">
+        <div class="title-subsection">
             <div class="title-message">
                 <h1>This website is awesome</h1>
                 <p>This website has some subtext that goes here under the main line.
@@ -30,52 +30,59 @@
                 alt="A client specified image in the title section.">
         </div>
 
-        <div class="information-section">
-            <div class="information-heading">
+        <div class="information-subsection">
+ 
+            <div class="information-title">
                 <p>Some random information.</p>
-                <ul>
-                    <li>
-                        <img class="info-item" src="./images/item1.png" 
-                        alt="Information item 1.">
-                        <p> this is some subtext under an illustration or image</p>                 
-                    </li>
-                    <li>
-                        <img class="info-item" src="./images/item2.png" 
-                        alt="Information item 1.">
-                        <p> this is some subtext under an illustration or image</p>                 
-                    </li>
-                    <li>
-                        <img class="info-item" src="./images/item3.png" 
-                        alt="Information item 1.">
-                        <p> this is some subtext under an illustration or image</p>                 
-                    </li>
-                    <li>
-                        <img class="info-item" src="./images/item4.png" 
-                        alt="Information item 1.">
-                        <p> this is some subtext under an illustration or image</p>                 
-                    </li>
-               </ul>
             </div>
+
+            <ul class="information-detail">
+                <li>
+                    <img class="info-image" src="./images/item1.png" 
+                    alt="Information item 1.">
+                    <p> this is some subtext under an illustration or image</p>                 
+                </li>
+                <li>
+                    <img class="info-image" src="./images/item2.png" 
+                    alt="Information item 1.">
+                    <p> this is some subtext under an illustration or image</p>                 
+                </li>
+                <li>
+                    <img class="info-image" src="./images/item3.png" 
+                    alt="Information item 1.">
+                    <p> this is some subtext under an illustration or image</p>                 
+                </li>
+                <li>
+                    <img class="info-image" src="./images/item4.png" 
+                    alt="Information item 1.">
+                    <p> this is some subtext under an illustration or image</p>                 
+                </li>
+            </ul>
             
         </div>
 
-        <div class="client-message-section">
-            <blockquote>
-                <p>This is an inspiring quote, or a testimonial from a
+        <div class="client-message-subsection">
+            <div class="client-message-text">
+                This is an inspiring quote, or a testimonial from a
                 customer.  Maybe it's just filling up space, or maybe
                 people will actually read it.  Who knows?  All I know
                 is that it looks nice.
-                </p>
-                <footer><cite class="author">&mdash;Thor, God of Thunder</class></footer>
-            </blockquote>
+            </div>
+            <div class="client-message-citation">
+                &mdash;Thor, God of Thunder
+            </div>
         </div>
 
         <div class="signup-section">
-            <div class="client-signup-message">
-                <h1>Call to action! It's time!</h1>
-                <p>Sign up for our product by clicking that button right over there!</p>
+            <div class="signup-blue-box">
+                <div class="client-signup-message">
+                    <h1>Call to action! It's time!</h1>
+                    Sign up for our product by clicking that button right over there!
+                </div>
+                <div class="button-container">
+                    <button class="signup-button white-border" type="button" >Sign up</button>    
+                </div>
             </div>
-            <button class="signup-button-inverted" type="button" >Sign up</button>            
         </div>
 
     </div>

@@ -1,0 +1,273 @@
+body {
+    /* A container in which to arrange
+       header, content, and footer sections of
+       the webpage vertically.
+    */
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+
+/*===========================================================
+    Header Section
+
+    The header section includes a client specifed logo (left(
+    and a navigation menu (right)
+  =========================================================== */
+
+   .header {
+    /*
+        Container for a client specified logo (left) 
+        and a navigation menu (right)
+    */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px
+
+    padding-left: 160px;
+    padding-right: 160px;
+
+    background-color: black;
+    color: white;
+}
+
+.header-logo {
+    /* size the client specified logo image file */
+    width: 54px;
+}
+
+/* The header navigation list */
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+
+    /* Remove the default list padding, margins, and bullets */
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+/* No underlines for menu items */
+.nav-list li a {
+    /* format the navigation menu items in the header section
+        - remove the default undeline and blue text for hyperlinks
+    */
+    text-decoration: none;
+    color: white;
+}
+
+/*===========================================================
+  The content section
+    This section consists of 4 parts/subsections: title, information, 
+    client message, and signup.
+  =========================================================== */
+
+.content {
+    /* Container for content section the
+       subsections are arranged vertically. */
+    display: flex;
+    flex-direction: column;
+}
+
+/* The title subsection is the first of four
+   subsections in the content section */
+
+.title-subsection {
+    /* container for message text (left) and a 
+       and inspiring image (right) */
+    display: flex;
+    justify-content: space-between;
+
+    padding: 100px 160px 100px 160px;
+}
+
+.title-image {
+    /* set the image width */
+    width: 160px;
+}
+
+.signup-button {
+    /* A signup button with rounded corners */
+    background-color: blue;
+    color: white;
+
+    padding: 4px 16px 4px 16px;
+
+    border: solid blue;
+    border-radius: 8px;
+}
+
+/* The information subsection is the second of four
+   subsections in the content section */
+
+.information-subsection {
+    /* container for the information subsection which contains: 
+         - a title (top)
+         - a list of information tidbits consisting of
+           - image (top)
+           - information text (bottom)
+    */
+
+    background-color: white;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 160px 100px 160px;
+}
+
+.information-title {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.information-detail {
+    /* container for information detail items 
+       containing image and text in an unordered
+       list */
+
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.information-detail li {
+    /* container for each individual information item
+       in the information subsections.  We are targeting
+       the list items within the information-detail 
+       unordered list */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+ .info-image {
+    /* formating for the information detail image */
+    border: solid blue;
+    border-radius: 8px;
+    width: 80px;
+ }  
+
+ /* The client message subsection is the third of four
+   subsections in the content section */
+
+.client-message-subsection {
+    /* container for a client specified inspiring message consisting of: 
+        - message text (top)
+        - citation (bottom)
+    */
+    background-color: grey;
+    color: black;
+
+    padding: 32px 192px 32px 192px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.client-message-text {
+    /* formating for the message text */
+    font-style: italic;
+    font-size: larger;
+}
+
+.client-message-citation {
+    /* container for the message citation
+         - the citation is located below the message text,
+         - it is in bold font,
+         - and it is right justified
+    */
+
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* The signup subsection is the fourth of four
+   subsections in the content section */
+
+.signup-section {
+    /* container for the blue box containing the signup message text 
+       This is centered within the signup section */
+
+    background-color: white;
+    color: black;
+    padding: 32px 192px 32px 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-blue-box {
+    /* container for the signup button and message with blue background */
+
+    background-color: blue;
+    flex-grow: 1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border: solid white;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.button-container {
+    /* container for the signup button itself to adjust its location
+       within the signup section, generally start centered and use
+       padding to create an offset.
+    */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-right: 32px;
+}
+
+.signup-button.white-border {
+    /* add a white border to the signup button */
+    border: solid white;
+}
+
+.client-signup-message {
+    /* signup message padding around the message text */
+    padding: 16px;
+}
+
+.client-signup-message h1 {
+    /* Modify the heading text within the signup message */
+    margin: 0px;
+}
+
+/*===========================================================
+  The footer section: TOP copywright message.
+  =========================================================== */
+.footer {
+    /* container and formating for the TOP copywright message 
+       at the bottom of the webpage */
+    color: white;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
