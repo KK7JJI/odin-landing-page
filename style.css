@@ -121,7 +121,7 @@ body {
     margin-top: 16px;
     padding: 4px 16px 4px 16px;
 
-    border: solid blue;
+    border: solid #3882F6;
     border-radius: 8px;
 
     font-size: 18px;
@@ -188,7 +188,7 @@ body {
 
  .info-image {
     /* formating for the information detail image */
-    border: solid rgb(59,130,246);
+    border: solid #3882F6;
     border-radius: 8px;
     width: 200px;
  }  
