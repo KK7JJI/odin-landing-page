@@ -8,7 +8,7 @@ body {
 
     height: 100vh;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(31,41,55);
     color: white;
 }
@@ -29,8 +29,8 @@ body {
     justify-content: space-between;
     padding-top: 16px;
 
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 188px;
+    padding-right: 188px;
 
     background-color: rgb(31,41,55);
     color: white;
@@ -52,6 +52,8 @@ body {
     padding: 0px;
     margin: 0px;
     list-style: none;
+
+    font-size: 16px;
 }
 
 /* No underlines for menu items */
@@ -85,12 +87,28 @@ body {
     display: flex;
     justify-content: space-between;
 
-    padding: 100px 160px 100px 160px;
+    padding: 120px 188px 120px 188px;
+}
+
+.title-message h1 {
+    /* format the h1 tags in title section message text */
+
+    color: white;
+    font-size: 48px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title-message {
+    /* format the title section message text */
+    color: rgb(154,160,167);
+    font-size: 22px;
 }
 
 .title-image {
     /* set the image width */
-    width: 160px;
+    width: 200px;
+    padding-left: 16px;
 }
 
 .signup-button {
@@ -98,10 +116,14 @@ body {
     background-color: rgb(59,130,246);
     color: white;
 
+    margin-top: 16px;
     padding: 4px 16px 4px 16px;
 
     border: solid blue;
     border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* The information subsection is the second of four
@@ -121,12 +143,14 @@ body {
     display: flex;
     flex-direction: column;
 
-    padding: 0px 160px 100px 160px;
+    padding: 24px 188px 120px 188px;
 }
 
 .information-title {
-    font-size: x-large;
-    font-weight: bold;
+    /* format the information subsection title text */
+
+    font-size: 36px;
+    font-weight:bolder;
     text-align: center;
 }
 
@@ -136,8 +160,7 @@ body {
        list */
 
     display: flex;
-    justify-content: space-between;
-    gap: 32px;
+    gap: 16px;
 
     padding: 0px;
     margin: 0px;
@@ -155,14 +178,16 @@ body {
     justify-content: center;
     align-items: center;
 
+    color: rgb(88,95,106);
     text-align: center;
+    font-size: 16px;
 }
 
  .info-image {
     /* formating for the information detail image */
     border: solid rgb(59,130,246);
     border-radius: 8px;
-    width: 80px;
+    width: 200px;
  }  
 
  /* The client message subsection is the third of four
@@ -176,7 +201,7 @@ body {
     background-color: rgb(229,231,235);
     color: rgb(88,95,106);
 
-    padding: 32px 192px 32px 192px;
+    padding: 120px 220px 120px 220px;
 
     display: flex;
     flex-direction: column;
@@ -186,7 +211,7 @@ body {
 .client-message-text {
     /* formating for the message text */
     font-style: italic;
-    font-size: larger;
+    font-size: 36px;
 }
 
 .client-message-citation {
@@ -199,7 +224,7 @@ body {
     display: flex;
     justify-content: flex-end;
     font-weight: bold;
-    font-size: large;
+    font-size: 24px;
 }
 
 /* The signup subsection is the fourth of four
@@ -211,7 +236,7 @@ body {
 
     background-color: white;
     color: rgb(88,95,106);
-    padding: 32px 192px 32px 192px;
+    padding: 100px 188px 100px 188px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,6 +253,16 @@ body {
     border: solid white;
     border-radius: 16px;
     padding: 32px;
+
+    font-size: 16px;
+}
+
+.client-signup-message h1 {
+    /* format the h1 tags in the signup message */
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
 }
 
 .button-container {
@@ -270,4 +305,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 24px 0px 24px 0px;
 }
