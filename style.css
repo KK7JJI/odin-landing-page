@@ -9,7 +9,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(31,41,55);
+    background-color: #1F2937;
     color: white;
 }
 
@@ -32,13 +32,14 @@ body {
     padding-left: 188px;
     padding-right: 188px;
 
-    background-color: rgb(31,41,55);
+    background-color: #1f2937;
     color: white;
 }
 
 .header-logo {
-    /* size the client specified logo image file */
-    width: 54px;
+    /* format header-logo text */
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 /* The header navigation list */
@@ -93,16 +94,17 @@ body {
 .title-message h1 {
     /* format the h1 tags in title section message text */
 
-    color: white;
+    color: #F9FAF8;
     font-size: 48px;
+    font-weight: 900;
     margin: 0px;
     padding: 0px;
 }
 
 .title-message {
     /* format the title section message text */
-    color: rgb(154,160,167);
-    font-size: 22px;
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 .title-image {
@@ -113,7 +115,7 @@ body {
 
 .signup-button {
     /* A signup button with rounded corners */
-    background-color: rgb(59,130,246);
+    background-color: #3882F6;
     color: white;
 
     margin-top: 16px;
@@ -150,7 +152,8 @@ body {
     /* format the information subsection title text */
 
     font-size: 36px;
-    font-weight:bolder;
+    color: #1F2937;
+    font-weight:900;
     text-align: center;
 }
 
@@ -198,8 +201,9 @@ body {
         - message text (top)
         - citation (bottom)
     */
-    background-color: rgb(229,231,235);
-    color: rgb(88,95,106);
+
+    background-color: #E5E7EB;
+    color: #1F2937;
 
     padding: 120px 220px 120px 220px;
 
@@ -212,6 +216,7 @@ body {
     /* formating for the message text */
     font-style: italic;
     font-size: 36px;
+    font-weight: 300;
 }
 
 .client-message-citation {
@@ -223,8 +228,9 @@ body {
 
     display: flex;
     justify-content: flex-end;
+    font-size: 36px;
     font-weight: bold;
-    font-size: 24px;
+
 }
 
 /* The signup subsection is the fourth of four
@@ -245,7 +251,7 @@ body {
 .signup-blue-box {
     /* container for the signup button and message with blue background */
 
-    background-color: rgb(59,130,246);
+    background-color: #3882F6;
     flex-grow: 1;
     color: white;
     display: flex;
